@@ -1,0 +1,39 @@
+(function(d){
+
+for(var i=0; i<5; i++){
+
+var createInp = d.createElement("input");
+//alert(createInp);
+
+createInp.setAttribute("name","fname");
+createInp.setAttribute("id","id" + i);
+createInp.setAttribute("value","fname");
+createInp.setAttribute("type", "text");
+d.body.appendChild(createInp);
+
+document.write("<br/>");
+document.write("<br/>");
+
+if(i == 1){
+createInp.setAttribute("name","lastName");
+createInp.setAttribute("value","lastName");
+//createInp.remove();
+}
+
+if(i == 2){
+createInp.setAttribute("name","emailId");
+createInp.setAttribute("value","emailId");
+}
+
+if(i == 3){
+createInp.setAttribute("name","color");
+createInp.setAttribute("value","color");
+}
+
+if(i == 4){
+createInp.setAttribute("name","URL");
+createInp.setAttribute("value","URL");
+}
+
+}
+})(document);
